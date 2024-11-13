@@ -255,21 +255,21 @@ section {
   border-bottom-right-radius: 1.2rem;
   border-bottom-left-radius: 1.2rem;
   position: relative;
-  top: -55px; /* Places it just below the header */
+  top: -55px; 
   left: 50%;
   transform: translateX(-50%);
   z-index: 1;
-  width: 90%; /* Slightly smaller than the header */
+  width: 90%; 
   text-align: center;
-  display: flex; /* Enable flexbox */
+  display: flex; 
   flex-direction: column;
-  justify-content: flex-end; /* Align content (p) to the bottom */
+  justify-content: flex-end; 
   height: 60px;
   padding: 0 1rem;
   font-size: 12px;
 }
 .header-trail-section p {
-  margin: 0; /* Removes default margin */
+  margin: 0; 
   font-style: italic;
 }
 
