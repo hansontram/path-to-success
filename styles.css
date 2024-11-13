@@ -209,7 +209,7 @@ section {
 #pricing th,
 #pricing td {
   padding: 0.5rem;
-  border: 1px solid var(--dark-gray);
+  border: 1px solid var(--yellow);
 }
 
 /* General Styles */
@@ -219,7 +219,7 @@ section {
   border-bottom-right-radius: 1.2rem;
   border-bottom-left-radius: 1.2rem;
   position: relative;
-  z-index: 2; /* Higher z-index brings header to the top layer */
+  z-index: 2; 
 }
 .menu-toggle {
   background-color: var(--yellow);
@@ -231,15 +231,15 @@ section {
   font-size: 1.2rem;
   cursor: pointer;
   font-weight: bold;
-  display: block; /* Show only on mobile */
+  display: block; 
   margin: 0 auto;
 
-  position: absolute; /* Position the button absolutely within the header */
-  top: -4px; /* Adjust top positioning as needed */
-  right: 10px; /* Align to the right edge */
+  position: absolute;  
+  top: -4px; 
+  right: 10px; 
 }
 
-/* Hidden navigation links on small screens */
+
 .nav-links {
   display: none;
   list-style-type: none;
@@ -273,15 +273,10 @@ section {
   font-style: italic;
 }
 
-/* Main */
-/* section > header{
-   border: 2px solid yellow;
-   margin-right: auto;
 
-} */
 .services-header{
-    border: 1px solid yellow;
-    /* text-align: left; */
+    
+
     width: 85%;
     margin: 0 auto;
     
@@ -307,7 +302,7 @@ section > h3{
 .service-container {
   background-color: var(--white);
   border-radius: 12px;
-  border: 2px solid red;
+
   width: 85%;
   padding: 1rem 0.5rem;
   display: flex;
@@ -325,7 +320,7 @@ section > h3{
    margin-left: 2rem;
 }
 #why-choose-us ul{
-    border: 2px solid yellow;
+
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -337,7 +332,6 @@ section > h3{
 #why-choose-us ul li{
 width: 35%;
 min-height: 60px;
-border: 2px dotted black;
 border-radius: 1rem;
 text-align: center;
 padding: 1.5rem ;
@@ -375,11 +369,11 @@ font-weight: bolder;
   margin: 0 auto;
 }
 
- /* Center align all tables and set width to 50% */
+
 .pricing-table table {
-  margin: 0 auto; /* Center the table */
+  margin: 0 auto; 
   border: 2px solid var(--yellow);
-  border-collapse: collapse; /* Remove extra spacing around table cells */
+  border-collapse: collapse; 
   background-color: var(--white);
 }
 #pricing table{
@@ -388,11 +382,11 @@ font-weight: bolder;
 
 /* Style the table headers */
 .pricing-table table thead {
-  background-color: var(--yellow) /* Set the background of the table head */
+  background-color: var(--yellow) 
 
 }
 
-/* Align h3 and h2 elements to the left */
+
 .pricing-table header h3, 
 .pricing-table header h2 {
   text-align: left;
@@ -413,10 +407,10 @@ font-weight: bolder;
 }
 .pricing-table h3 {
   font-weight: bold;
-  border: 1px solid red;
+
 width: 100%;
 }
-/* TODO: REDO THE BUTTON */
+
 #contact{
   background-color: var(--pink);
   padding: 1rem 2rem;
@@ -433,13 +427,13 @@ width: 100%;
 .button-container{
   display: flex;
   justify-content: center;
-border: 1px solid yellow;
+
   
   
 }
 #contact button {
   border-radius: .5rem;
-  /* padding: 1rem 3rem; */
+
   text-transform: capitalize;
   width: 100%;
   padding: 1rem 2rem;
@@ -456,10 +450,10 @@ footer a{
 /*-------------------- MEDIA QUERY (medium) --------------------------------*/
 @media (min-width: 620px) {
   .menu-toggle {
-    display: none; /* Hide the "Menu" button */
+    display: none; 
   }
 
-  /* Display navigation links horizontally */
+
   .nav-links {
     display: flex;
     justify-content: center;
@@ -480,18 +474,18 @@ footer a{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 1rem; /* Space between service containers */
+    gap: 1rem; 
     justify-content: center;
   }
 
-  /* First two items in each row to have 45% width */
+
   .small {
  width: 40%;
  height: 100%;
     
   }
 
-  /* Every 3rd item takes up the full width */
+  
   .first-service-container:nth-child(3n) {
     width: 90%;
   }
@@ -514,37 +508,34 @@ footer a{
 
 #contact {
   display: flex;
-  flex-direction: column; /* Stack elements vertically */
+  flex-direction: column; 
   width: 100%;
-  gap: 1rem; /* Space between elements */
+  gap: 1rem; 
 }
 
 #contact h2 {
-  width: 100%; /* Make h2 take the full width */
+  width: 100%; 
   font-size: 2rem;
   margin: 0;
 }
 
 
 
-/* Flex container for p and button */
+
 .contact-content {
   display: flex;
   flex-direction: row;
-  width: 80%; /* Full width for the container */
-  gap: 1rem; /* Space between p and button */
+  width: 80%; 
+  gap: 1rem; 
 }
 
 #contact p {
-  flex: 1; /* Take up half of the available space */
+  flex: 1; 
   font-size: 1rem;
   margin: 0;
 }
 
-/* 
-.button-container{
-  height: ;
-} */
+
 
 
 
