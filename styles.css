@@ -1,5 +1,5 @@
 /* -------------------- IMPORTED FONTS -------------------------------------- */
-@import url('https://fonts.googleapis.com/css2?family=Habibi&family=Irish+Grover&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kavoon&display=swap");
 
 /* -------------------- CSS RESET ------------------------------------------- */
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -7,110 +7,557 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
 }
-ol, ul {
-	list-style: none;
+ol,
+ul {
+  list-style: none;
 }
-blockquote, q {
-	quotes: none;
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 /* -------------------- ROOT VARIABLES --------------------------------------- */
 :root {
-    --teal: #4CA7C0;
-    --purple: #484FB7;
-    --lavender: #6B8FE7;
-    --yellow: #E9BB57;
-    --pink: #D9526F;
-    --dark-gray: #1E1E1E;
-    --white: #ffffff;
+  --teal: #4ca7c0;
+  --purple: #484fb7;
+  --lavender: #6b8fe7;
+  --yellow: #e9bb57;
+  --pink: #d9526f;
+  --dark-gray: #1e1e1e;
+  --white: #ffffff;
 }
 
 /* -------------------- GLOBAL STYLES (mobile first/small) -------------------- */
 body {
-    font-family: 'Inter', sans-serif;
-    color: var(--dark-gray);
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
+  font-family: "Inter", sans-serif;
+  color: var(--dark-gray);
+  background-color: var(--purple);
+  line-height: 1.6;
 }
 
-header, nav, section, footer {
-    padding: 1rem;
-    text-align: center;
+header,
+nav,
+footer {
+  padding: 1rem;
+  text-align: center;
 }
 
 h1 {
-    font-family: 'Kavoon', cursive;
-    font-size: 3em;
-    color: var(--teal);
+  font-family: "Kavoon", cursive;
+  font-size: 3em;
+  color: var(--white);
 }
 
-h2, h3 {
-    font-family: 'Kavoon', cursive;
-    color: var(--purple);
+h2 {
+  font-size: 2em;
+  font-family: "Kavoon", cursive;
+  /* color: var(--purple); */
+  color: var(--white);
 }
-
+h3 {
+  font-size: 1.5em;
+  font-weight: bolder;
+  color: var(--yellow);
+}
+h4 {
+  font-size: 1.15em;
+  color: var(--purple);
+  font-weight: bolder;
+}
 nav ul {
-    list-style: none;
-    padding: 0;
+  list-style: none;
+  padding: 0;
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 1rem;
+  display: inline;
+  margin: 0 1rem;
 }
 
 nav a {
-    color: var(--purple);
-    text-decoration: none;
+  color: var(--purple);
+  text-decoration: none;
+}
+nav h2 {
+  font-size: 1.5em;
 }
 
 section {
-    margin: 2rem 0;
+  margin: 2rem 0;
 }
 
 #pricing table {
-    width: 100%;
-    border-collapse: collapse;
+  width: 100%;
+  border-collapse: collapse;
 }
 
-#pricing th, #pricing td {
-    padding: 0.5rem;
-    border: 1px solid var(--dark-gray);
+#pricing th,
+#pricing td {
+  padding: 0.5rem;
+  border: 1px solid var(--dark-gray);
+}
+
+/* General Styles */
+
+.main-header {
+  background-color: var(--lavender);
+  border-bottom-right-radius: 1.2rem;
+  border-bottom-left-radius: 1.2rem;
+  position: relative;
+  z-index: 2; /* Higher z-index brings header to the top layer */
+}
+.menu-toggle {
+  background-color: var(--yellow);
+  color: var(--dark-gray);
+  border: none;
+  border-bottom-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  padding: 1rem 1rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  font-weight: bold;
+  display: block; /* Show only on mobile */
+  margin: 0 auto;
+
+  position: absolute; /* Position the button absolutely within the header */
+  top: -4px; /* Adjust top positioning as needed */
+  right: 10px; /* Align to the right edge */
+}
+
+/* Hidden navigation links on small screens */
+.nav-links {
+  display: none;
+  list-style-type: none;
+  padding: 0;
+}
+
+.nav-links li {
+  margin: 10px 0;
+}
+.header-trail-section {
+  background-color: var(--pink);
+  color: var(--white);
+  border-bottom-right-radius: 1.2rem;
+  border-bottom-left-radius: 1.2rem;
+  position: relative;
+  top: -55px; /* Places it just below the header */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  width: 90%; /* Slightly smaller than the header */
+  text-align: center;
+  display: flex; /* Enable flexbox */
+  flex-direction: column;
+  justify-content: flex-end; /* Align content (p) to the bottom */
+  height: 60px;
+  padding: 0 1rem;
+  font-size: 12px;
+}
+.header-trail-section p {
+  margin: 0; /* Removes default margin */
+  font-style: italic;
+}
+
+/* Main */
+/* section > header{
+   border: 2px solid yellow;
+   margin-right: auto;
+
+} */
+.services-header{
+    border: 1px solid yellow;
+    /* text-align: left; */
+    width: 85%;
+    margin: 0 auto;
+    
+}
+section > h3{
+   
+    
+    width: 85%;
+    margin: 0 auto;
+    margin: 0;
+}
+#services-all {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.services-heading {
+  color: var(--white);
+}
+
+.service-container {
+  background-color: var(--white);
+  border-radius: 12px;
+  border: 2px solid red;
+  width: 85%;
+  padding: 1rem 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+
+}
+
+#why-choose-us{
+    background-color: var(--pink);
+   
+}
+#why-choose-us h2{
+    
+   margin-left: 2rem;
+}
+#why-choose-us ul{
+    border: 2px solid yellow;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+#why-choose-us ul li{
+width: 35%;
+min-height: 60px;
+border: 2px dotted black;
+border-radius: 1rem;
+text-align: center;
+padding: 1.5rem ;
+font-weight: bolder;
+}
+#why-choose-us ul li:nth-child(1) {
+    background-color: var(--teal);
+
+}
+
+#why-choose-us ul li:nth-child(2) {
+    background-color: blue;
+ 
+}
+
+#why-choose-us ul li:nth-child(3) {
+    background-color: yellow;
+   
+}
+
+#why-choose-us ul li:nth-child(4) {
+    background-color: white;
+    
+}
+/* Tables */
+#pricing{
+  display: flex;
+  flex-direction: column;
+}
+.pricing h2, .pricing-table h3 {
+  margin-left: 1rem;
+}
+.pricing-table{
+  
+  margin: 0 auto;
+}
+
+ /* Center align all tables and set width to 50% */
+.pricing-table table {
+  margin: 0 auto; /* Center the table */
+  border: 2px solid var(--yellow);
+  border-collapse: collapse; /* Remove extra spacing around table cells */
+  background-color: var(--white);
+}
+#pricing table{
+  width: 60%;
+}
+
+/* Style the table headers */
+.pricing-table table thead {
+  background-color: var(--yellow) /* Set the background of the table head */
+
+}
+
+/* Align h3 and h2 elements to the left */
+.pricing-table header h3, 
+.pricing-table header h2 {
+  text-align: left;
+  margin-left: 0;
+ 
+}
+
+/* General table styling */
+.pricing-table table th,
+.pricing-table table td {
+  padding: 0.8rem;
+  text-align: center;
+  
+}
+
+.pricing-table table th{
+  font-weight: bold;
+}
+.pricing-table h3 {
+  font-weight: bold;
+  border: 1px solid red;
+width: 100%;
+}
+/* TODO: REDO THE BUTTON */
+#contact{
+  background-color: var(--pink);
+  padding: 1rem 2rem;
+
+
+}
+.contact-content{
+  display: flex;
+  flex-direction: column;
+}
+#contact p {
+  color: var(--white);
+}
+.button-container{
+  display: flex;
+  justify-content: center;
+border: 1px solid yellow;
+  
+  
+}
+#contact button {
+  border-radius: .5rem;
+  /* padding: 1rem 3rem; */
+  text-transform: capitalize;
+  width: 100%;
+  padding: 1rem 2rem;
+}
+footer{
+  display: flex;
+  justify-content: space-evenly;
+  color: white;
+}
+
+footer a{
+  color: var(--white);
+}
+/*-------------------- MEDIA QUERY (medium) --------------------------------*/
+@media (min-width: 620px) {
+  .menu-toggle {
+    display: none; /* Hide the "Menu" button */
+  }
+
+  /* Display navigation links horizontally */
+  .nav-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .nav-links a {
+    font-size: 1rem;
+    text-decoration: none;
+    padding: 10px;
+  }
+
+  .nav-links a:hover {
+    background-color: #555;
+    border-radius: 5px;
+  }
+  #services-all {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem; /* Space between service containers */
+    justify-content: center;
+  }
+
+  /* First two items in each row to have 45% width */
+  .small {
+ width: 40%;
+ height: 100%;
+    
+  }
+
+  /* Every 3rd item takes up the full width */
+  .first-service-container:nth-child(3n) {
+    width: 90%;
+  }
+}
+
+#why-choose-us ul{
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+#why-choose-us ul li{
+  width: 13%;
+  
+}
+
+#pricing{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#contact {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  width: 100%;
+  gap: 1rem; /* Space between elements */
+}
+
+#contact h2 {
+  width: 100%; /* Make h2 take the full width */
+  font-size: 2rem;
+  margin: 0;
+}
+
+
+
+/* Flex container for p and button */
+.contact-content {
+  display: flex;
+  flex-direction: row;
+  width: 80%; /* Full width for the container */
+  gap: 1rem; /* Space between p and button */
+}
+
+#contact p {
+  flex: 1; /* Take up half of the available space */
+  font-size: 1rem;
+  margin: 0;
+}
+
+/* 
+.button-container{
+  height: ;
+} */
+
+
+
+
+
+
+
+
+
+/*-------------------- MEDIA QUERY (large) ------------------------------------*/
+@media (min-width: 950px) {
+}
+
+/*-------------------- MEDIA QUERY (xl) ---------------------------------------*/
+@media (min-width: 1280px) {
 }
